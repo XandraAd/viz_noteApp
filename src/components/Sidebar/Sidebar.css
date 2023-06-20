@@ -1,0 +1,66 @@
+.app-sidebar {
+    width: 60px;
+    background: var(--clr-black);
+    transition: all 100ms ease-in-out;
+    height: 100vh;
+}
+
+@media screen and (min-width: 992px) {
+    .app-sidebar {
+        width: 240px;
+    }
+}
+
+.app-sidebar .app-brand {
+    padding: 10px;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.app-sidebar .app-brand img {
+    width: 200%;
+    overflow: hidden;
+}
+
+.app-sidebar .icon-text {
+    display: none;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 992px) {
+    .app-sidebar .icon-text {
+        display: block;
+        margin-left: 6px;
+    }
+}
+
+.app-sidebar .links .link-item {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.app-sidebar .links .link-item.active-link {
+    background-color: #2F62A2;
+    color: var(--clr-black);
+}
+
+.app-sidebar .links .link-item:hover {
+    background-color: #FFAE42;
+    color: var(--clr-black);
+}
+
+@media screen and (min-width: 992px) {
+    .app-sidebar .links .link-item {
+        justify-content: flex-start;
+        padding-left: 16px;
+    }
+
+    .app-sidebar .links .link-item .icon {
+        width: 28px;
+    }
+}
+
+
